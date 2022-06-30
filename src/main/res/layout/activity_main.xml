@@ -8,13 +8,14 @@
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="1180dp"
-        android:layout_height="121dp"
-        android:text="ダイアログ表示"
-        android:textSize="34sp"
+        android:layout_width="809dp"
+        android:layout_height="124dp"
+        android:text="クイズを表示"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.255" />
 </androidx.constraintlayout.widget.ConstraintLayout>
