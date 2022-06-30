@@ -6,29 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvSelDate"
+    <EditText
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="15dp"
-        android:text="選択後の年月日が表示される"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="名前を入力"
+        android:inputType="textPersonName"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSend"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.212"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
 
     <Button
-        android:id="@+id/btn"
-        android:layout_width="1036dp"
-        android:layout_height="102dp"
-        android:text="ダイアログから日付を入力"
+        android:id="@+id/btnSend"
+        android:layout_width="593dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="148dp"
+        android:text="サブ画面へ"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="401dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="年齢を入力"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSend"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="1272dp"
+        android:layout_height="65dp"
+        android:text="メインアクティビティです！"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSelDate"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
