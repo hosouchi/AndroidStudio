@@ -6,28 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnOpenGMap"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="GoogleMapをひらいて、任意の場所をロングタップ→クリップボードにコピー"
-        android:textAllCaps="false"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvLoc"
-        app:layout_constraintStart_toStartOf="@+id/tvLoc"
-        app:layout_constraintTop_toBottomOf="@+id/tvLoc" />
-
     <TextView
-        android:id="@+id/tvLoc"
+        android:id="@+id/tvHtml"
         android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="TextView"
-        android:textSize="24sp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="ここにPCのTomcatのトップページHTMLが表示されます。"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

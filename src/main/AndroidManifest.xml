@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.chap8_intentimplgooglemap">
+    package="com.example.chap10_2_networkbasic">
+
+    <!--　ネットワーク接続許可を請う設定-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
@@ -11,7 +15,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Chap8_IntentImplGoogleMap"
+        android:theme="@style/Theme.Chap10_2_NetworkBasic"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
