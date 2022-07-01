@@ -8,11 +8,11 @@
 
     <ListView
         android:id="@+id/list"
-        android:layout_width="689dp"
-        android:layout_height="481dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="92dp"
-        android:choiceMode="multipleChoice"
+        android:layout_width="1200dp"
+        android:layout_height="750dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
 </androidx.constraintlayout.widget.ConstraintLayout>
