@@ -6,37 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvsayHello"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="24dp"
-        android:text="MainActivityです！戻ってきたあとはこの場所に挨拶を表示します。"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163" />
-
     <Button
-        android:id="@+id/btnToSub"
+        android:id="@+id/btnOpenGMap"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="GoogleMapをひらいて、任意の場所をロングタップ→クリップボードにコピー"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoc"
+        app:layout_constraintStart_toStartOf="@+id/tvLoc"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoc" />
+
+    <TextView
+        android:id="@+id/tvLoc"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="SubActivityへ飛びます"
-        android:textAllCaps="false"
+        android:text="TextView"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvsayHello"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvsayHello"
-        app:layout_constraintTop_toBottomOf="@+id/tvsayHello"
-        app:layout_constraintVertical_bias="0.157" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
